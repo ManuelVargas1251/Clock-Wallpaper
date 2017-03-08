@@ -1,5 +1,4 @@
-#Real Time Clock
-While working on my [Chrome for Android Theme Color Viewer](http://codepen.io/manuelvargas1251/pen/gPJmGN), still in progress, I wanted to add a working clock in the status bar of the phone and I got carried away and create this functionality with a nice background.
+#Clock + Wallpaper
+Simple clock with random image using [Unsplash API](https://source.unsplash.com/). Just something nice to have in the background.
 
-##Demo
-[manuelvargas.me/time](http://manuelvargas.me/time)
+[View Demo](http://manuelvargas.me/Clock-Wallpaper)
