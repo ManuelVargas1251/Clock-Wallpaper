@@ -4,10 +4,17 @@ function checkTime(i) {
 	return i
 }
 function twelvehour(h) {
-	if (h>12)
-		return h-"12"
-	if (h==0)
-		return "12"
+	if (h>12){
+		var f = h-12
+		return f;
+		//console.log("h>12")
+	}
+	if (h==0){
+		return 12
+		//console.log("h==12")
+	}
+	else	
+		return h
 }
 //return post or ante
 function get_ampm(h){
@@ -21,11 +28,11 @@ function start() {
 	var h = today.getHours()
 	var m = today.getMinutes()
 	var ampm = get_ampm(h)
-	
+
 	//clean both sources
 	m = checkTime(m)	//add 0 for nums > 10
 	h = twelvehour(h)	//changes to 12hr format
-    
+
 	//write time to screen
     document.getElementById('txt').innerHTML = h + ":" + m + " " + ampm
 	//Since we aren't printing seconds, we can wait longer to call the function again
